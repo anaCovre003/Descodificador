@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+     <div class="criptografar">
+
+        <textarea 
+        name="texto" 
+        class ="texto" 
+        id="texto" 
+        cols="30" 
+        rows="10" 
+        placeholder="Insira o texto aqui" >
+    </textarea>
+     </div>
+      <div class="terminos">
+        <p>Apenas letras minusculas e sem acentos</p>
+      </div>
+      <div class="botoes">
+          <button class="btn-criptografar" type="button" onclick="criptografar()">
+          Criptografar
+        </button>
+          <input 
+          type="button" 
+          class="btn-descriptografar" 
+          value="Descriptografar" 
+          onclick="descriptografar()"
+          
+          />
+      </div>
+      <div class="Criptografado">
+        <img src="" alt="" id="bonecos">
+        <div class="mensagem-criptografada" id="mensagem-criptografada">
+            <h2 id="titulo-mensagem">Nenhuma mensagem encontrada</h2>
+            <p>Insira o texto que deseja para criptografar ou descriptografar</p>
+            <textarea 
+            name="mensagem" 
+            id="mensagem" 
+            cols="30" 
+            rows="10" 
+            class="mensagem">
+        </textarea>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+<script>src="descodificador.js"</script>
+
+
+</html>
