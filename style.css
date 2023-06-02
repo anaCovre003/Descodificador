@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#icon{
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;
+
+         position: absolute;
+         width: 120px;
+         height: 48px;
+         left: 61px;
+         top: 58px;
+}
+
+.container{
+    position: relative;
+    width:100vw;
+    height: 100vh;
+    background:#F3F5FC ;
+}
+
+.texto{
+    position: absolute;
+    width:42%;
+    height: 60%;
+    left:12%;
+    top:15%;
+    border:none;
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #F3F5FC;
+}
+
+.texto::placeholder{
+    color:#0a3871;
+
+}
+
+.texto:focus,.texto:active{
+    border:none;
+    outline: none;
+}
+#exclamacao {
+
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.terminos{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding:0px;
+   gap:8px;
+   position:absolute;
+   width:80%;
+   left:12%;
+   top:80%;
+}
+
+.terminos p{
+    font-family: "inter";
+    font-size: 12px;
+    font-style:normal;
+    font-weight: 400;
+    line-height: 150%;
+    color:#495057;
+    opacity: 0.8;
+    flex:none;
+    order:1;
+    flex-grow: 0;
+}
+
+.botoes{
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  padding:1% 0;
+  position:absolute;
+  width:80%;
+  left:12%;
+  top:82%;
+}
+
+.btn-criptografar{
+   align-items:center;
+   justify-content: center;
+   padding:2%;
+   gap:8px;
+   width:25%;
+   background-color: #0a3871;
+   border-radius: 24px;
+   font-family: "inter";
+   font-size:18px;
+   line-height: 19px;
+   text-align: center;
+   color:#fff;
+
+}
+
+.btn-descriptografar{
+   box-sizing: border-box;
+   display: flex;
+   align-items:flex-start;
+   justify-content: center;
+   flex-direction: row;
+   padding:2%;
+   gap:8px;
+   width:25%;
+   background-color: #d0dbe8;
+   border:1px solid #0a3871;
+   border-radius: 24px;
+   font-family: "inter";
+   font-size:18px;
+   font-weight: 400;
+   line-height: 19px;
+   text-align: center;
+   color:#0a3871;
+}
+
+.btn-criptografar:hover,.btn-descriptografar:hover{
+    margin:0.3%;
+    width:24.5%;
+    padding:1.8%;
+}
+#mensagem {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: none;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.5;
+    
+  }
+.Criptografado{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    width:30%;
+    height: 90%;
+    left:60%;
+    top:5%;
+    background: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8 );
+    border-radius: 32px;
+}
+
+.mensagemCriptografada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:1%;
+    gap:16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensagemCriptografada h2{
+    width:60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color:#343a40;
+}
+
+.mensagemCriptografada p{
+    width: 80%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+ 
+.Criptografado img{
+    position:absolute;
+    width: 80%;
+    height: 50%;
+    top:15%;
+}
+
+/* Design responsivo*/
+
+@media(max-width:57.5em){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Criptografado{
+        width:100%;
+    }
+
+    .texto{
+        width: 50%;
+        height: 50%;
+        left: 5%;
+        top:5%;
+    }
+
+    .terminos{
+        width:100%;
+        left:10%;
+        top:67%;
+    }
+    .terminos p{
+        font-size:16px;
+    }
+    .botoes{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btn-criptografar, .btn-descriptografar{
+        width: 48%;
+        border-radius: 16px;
+    }
+   .btn-criptografar:hover,.btn-descriptografar:hover{
+    margin:0.3% ;
+    width: 47.5%;
+    padding: 1.8%;
+   }
+
+   .Criptografado{
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top:80%;
+   }
+
+   .mensagemCriptografada{
+    width: 100%;
+    top:5%;
+  }
+  .Criptografado img{
+    top:0;
+    display:none;
+    visibility:hidden ;
+  }
+
+}
