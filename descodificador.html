@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descodificador de Texto</title>
-    <link rel="stylesheet" href="style.css">
+    
+      <title>Descodificador de Texto</title>
+      <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
 
+<body>
+   
+    <div class="container">
+     <img src="alura.png" alt="" id ="icon">
      <div class="criptografar">
 
         <textarea 
@@ -18,29 +21,27 @@
         id="texto" 
         cols="30" 
         rows="10" 
-        placeholder="Insira o texto aqui" >
-    </textarea>
+        placeholder="Insira o texto aqui" 
+        ></textarea>
      </div>
       <div class="terminos">
-        <p>Apenas letras minusculas e sem acentos</p>
+        <img src="bi_exclamation-circle-fill.png" alt="" id="exclamacao">
+        <p >Apenas letras minusculas e sem acentos</p>
       </div>
       <div class="botoes">
-          <button class="btn-criptografar" type="button" onclick="criptografar()">
-          Criptografar
-        </button>
-          <input 
-          type="button" 
-          class="btn-descriptografar" 
-          value="Descriptografar" 
-          onclick="descriptografar()"
+          <button class="btn-criptografar"  onclick="btnEncriptar()">
+             Criptografar
+          </button>
+         
+          <button class="btn-descriptografar"  onclick="btnDesencriptar()">Descriptografar</button>
           
-          />
-      </div>
+        </div>
       <div class="Criptografado">
-        <img src="" alt="" id="bonecos">
-        <div class="mensagem-criptografada" id="mensagem-criptografada">
-            <h2 id="titulo-mensagem">Nenhuma mensagem encontrada</h2>
-            <p>Insira o texto que deseja para criptografar ou descriptografar</p>
+        <img src="High quality products 1 1.png" alt="" id="bonecos" style="display: block;">
+        
+        <div class="mensagemCriptografada" id="mensagem-criptografada">
+            <h2 id="titulo-mensagem"> Nenhuma mensagem encontrada</h2>
+            <p id="paragrafo">Insira o texto que deseja para criptografar ou descriptografar</p>
             <textarea 
             name="mensagem" 
             id="mensagem" 
@@ -52,9 +53,11 @@
       </div>
     </div>
 
+      <script src="descodificador.js"></script>
+
 </body>
 
-<script>src="descodificador.js"</script>
+
 
 
 </html>
